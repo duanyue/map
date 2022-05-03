@@ -7,17 +7,15 @@ defineProps({
 
 const map = ref(null)
 onMounted(()=>{
-console.log('leaflet::',__MAP__)
 const dom = document.getElementById('map')
 __MAP__.init(dom)
-console.log('map::',map)
 })
 
 
 </script>
 
 <template>
-  <div ref="map" id="map">你好</div>
+  <div ref="map" id="map"></div>
 </template>
 
 <style scoped>
